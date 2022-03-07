@@ -13,7 +13,7 @@ on:
     strategy:
       matrix:
         node-version: [16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+       
 
     steps:
     - uses: actions/checkout@v2
@@ -24,4 +24,4 @@ on:
         cache: 'npm'
     - run: npm i
     - run: npm test
-     - run: npm run build 
+    - run: npm run build 
